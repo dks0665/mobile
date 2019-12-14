@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}
+	<div class = "container" style="padding: 215px 150px 150px 480px">
+
+	<h1 >로그인</h1>
+
+	<form method= "POST" action = "{% url 'login'%}">{% csrf_token %}
+
+		
+		ID:
+		<br>
+		<input name = "username"type="text">
+		<br>
+		Password:
+		<br>
+		<input name="password" type="password">
+		<br><br>
+        {% if error %}
+        <p style="color:green" > {{error}} </p>
+        {% endif %}
+		<input class="btn btn-primary" type="submit" value="로그인">
+        <input class="btn btn-primary" type="button" value="회원가입" onclick="location.href='{% url 'signup' %}'">
+
+	</form>
+</div>
+{% endblock %}
