@@ -30,5 +30,9 @@ urlpatterns = [
     path('recipe2', main.views.recipe2, name='recipe2Page'),
     path('recipe3', main.views.recipe3, name='recipe3Page'),
     path('recipe4', main.views.recipe4, name='recipe4Page'),
+    path('recipe5', main.views.recipe5, name='recipe5Page'),
+    path('recipe6', main.views.recipe6, name='recipe6Page'),
+    path('recipe7', main.views.recipe7, name='recipe7Page'),
+    path('recipe8', main.views.recipe8, name='recipe8Page'),
     path('login/', include('login.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

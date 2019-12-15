@@ -28,3 +28,19 @@ def recipe4(request):
     recipes4 = Main.objects.all
     return render(request, 'recipe4.html', {'recipes4':recipes4})
 
+def recipe5(request):
+    recipes5 = Main.objects.all
+    return render(request, 'recipe5.html', {'recipes5':recipes5})
+
+def recipe6(request):
+    recipes6 = Main.objects.all
+    return render(request, 'recipe6.html', {'recipes6':recipes6})
+
+def recipe7(request):
+    recipes7 = Main.objects.all
+    return render(request, 'recipe7.html', {'recipes7':recipes7})
+
+def recipe8(request):
+    recipes8 = Main.objects.all
+    return render(request, 'recipe8.html', {'recipes8':recipes8})
+

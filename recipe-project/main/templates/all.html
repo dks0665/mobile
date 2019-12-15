@@ -42,6 +42,18 @@
                     {% if i.이름 == "스팸마요덮밥" %}
                     <a href="{% url 'recipe4Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
                     {% endif %}
+                    {% if i.이름 == "인기반찬 김치찌개" %}
+                    <a href="{% url 'recipe5Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
+                    {% endif %}
+                    {% if i.이름 == "레전드 된장찌개" %}
+                    <a href="{% url 'recipe6Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
+                    {% endif %}
+                    {% if i.이름 == "식빵위에 알록달록 피자가~!!" %}
+                    <a href="{% url 'recipe7Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
+                    {% endif %}
+                    {% if i.이름 == "보들보들 돈까스덮밥" %}
+                    <a href="{% url 'recipe8Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
+                    {% endif %}
                 </td>
             </tr>
            {% endfor %}
