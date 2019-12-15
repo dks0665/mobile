@@ -22,7 +22,7 @@
             <h1 class="font-weight-light">{{homes.1.이름}}</h1>
             <p class=mt-5>재료 : {{homes.1.재료}}</p>
             <br>
-            <a class="btn btn-warning text-white float-right mt-5" href="#">레시피 보기</a>
+            <a class="btn btn-warning text-white float-right mt-5" href="{% url 'recipe2Page' %}">레시피 보기</a>
         </div>
         <!-- /.col-md-4 -->
     </div>
@@ -46,7 +46,7 @@
                     <p class="card-text">{{homes.0.재료}}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
+                    <a href="{% url 'recipe1Page' %}" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                     <p class="card-text">{{homes.2.재료}}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
+                    <a href="{% url 'recipe3Page' %}" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                     <p class="card-text">{{homes.3.재료}}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
+                    <a href="{% url 'recipe4Page' %}" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
                 </div>
             </div>
         </div>
