@@ -18,7 +18,7 @@
 		<input name="password" type="password">
 		<br><br>
         {% if error %}
-        <p style="color:green" > {{error}} </p>
+        <p class="font-weight-bold" style="color:tomato" > {{error}} </p>
         {% endif %}
 		<input class="btn btn-primary" type="submit" value="로그인">
         <input class="btn btn-primary" type="button" value="회원가입" onclick="location.href='{% url 'signup' %}'">
