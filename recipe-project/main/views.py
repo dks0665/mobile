@@ -27,3 +27,4 @@ def recipe3(request):
 def recipe4(request):
     recipes4 = Main.objects.all
     return render(request, 'recipe4.html', {'recipes4':recipes4})
+

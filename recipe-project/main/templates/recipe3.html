@@ -9,54 +9,50 @@
 
     </br>
     <div class="card text-white bg-secondary my-5 py-1 text-center">
+        <p class="text-white m-0 font-weight-normal">완성사진</p>
+    </div>
+
+    <div class="text-center">
+    <img class="rounded ml-5 m-2" src="{{recipes3.2.완성사진.url}}" >
+    </div>
+
+
+    </br>
+    <div class="card text-white bg-secondary my-5 py-1 text-center">
         <p class="text-white m-0 font-weight-normal">레시피</p>
     </div>
 
-    <!-- Heading Row -->
-    <div class="row align-items-center my-5">
-
-        <!-- /.col-md-4 -->
-
-        <table class="table table-striped">
-            <thead>
-            <tr>             
-            </tr>
-            </thead>
-            <tbody>
-            {% for i in recipes  %}
-            <tr>
-                <td><img class="rounded ml-5 m-2"src="{{i.완성사진.url}}" width="200"></td>
-                <td>
-                    <h4 class="text-center mt-3">{{i.이름}}</h4>
-                    <p class="mt-5 ml-2">재료 : {{i.재료}} </p>
-                    <?=$_POST[position]?>
-                </td>
-                <td><br/><br/>
-                    {% if i.이름 == "<간단한> 마늘빵 만들기" %}
-                    <form method="get" action="">
-                        <a class="btn btn-warning text-white float-right mt-5" href="##">레시피 보기</a>
-                    </form>
-                    {% endif %}
-                    <form method="get" action="">
-                        <a class="btn btn-warning text-white float-right mt-5" href="">레시피 보기</a>
-                    </form>
-
-                    <form action="{% url 'recipePage' %}" method="GET">
-                        <input name="position" type="hidden" value="1">
-                        <input class="btn btn-warning text-white float-right mt-5" type="submit" value="레시피 보기">
-                    </form>
-
-
-                </td>
-            </tr>
-           {% endfor %}
-            <tbody>
-        </table>
-    
+    <div class="text-center">
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피1_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피1}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피2_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피2}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피3_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피3}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피4_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피4}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피5_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피5}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피6_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피6}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피7_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피7}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피8_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피8}}</h4>
+        <br/><br/>
+        <img class="rounded ml-5 m-2" src="{{recipes3.2.레시피9_사진.url}}" width="500" >
+        <h4 class="m-0 font-weight-normal">{{recipes3.2.레시피9}}</h4>
+        <br/><br/>
     </div>
-    <!-- /.row -->
 
-    
+
 
 </div>
 <!-- /.container -->
