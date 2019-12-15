@@ -26,5 +26,9 @@ urlpatterns = [
     # path('main/', include('main.urls')),
     path('home', main.views.home, name='homePage'),
     path('all', main.views.all, name='allPage'),
+    path('recipe1', main.views.recipe1, name='recipe1Page'),
+    path('recipe2', main.views.recipe2, name='recipe2Page'),
+    path('recipe3', main.views.recipe3, name='recipe3Page'),
+    path('recipe4', main.views.recipe4, name='recipe4Page'),
     path('login/', include('login.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

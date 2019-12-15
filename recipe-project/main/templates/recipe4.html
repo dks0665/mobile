@@ -3,12 +3,13 @@
 
 {% block contents %}
 
+
 <!-- Page Content -->
 <div class="container">
 
     </br>
     <div class="card text-white bg-secondary my-5 py-1 text-center">
-        <p class="text-white m-0 font-weight-normal">모든 레시피</p>
+        <p class="text-white m-0 font-weight-normal">레시피</p>
     </div>
 
     <!-- Heading Row -->
@@ -22,26 +23,30 @@
             </tr>
             </thead>
             <tbody>
-            {% for i in alls %}
+            {% for i in recipes  %}
             <tr>
                 <td><img class="rounded ml-5 m-2"src="{{i.완성사진.url}}" width="200"></td>
                 <td>
                     <h4 class="text-center mt-3">{{i.이름}}</h4>
-                    <p class="mt-5 ml-2">재료 : {{i.재료}}</p>
+                    <p class="mt-5 ml-2">재료 : {{i.재료}} </p>
+                    <?=$_POST[position]?>
                 </td>
                 <td><br/><br/>
                     {% if i.이름 == "<간단한> 마늘빵 만들기" %}
-                    <a href="{% url 'recipe1Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
+                    <form method="get" action="">
+                        <a class="btn btn-warning text-white float-right mt-5" href="##">레시피 보기</a>
+                    </form>
                     {% endif %}
-                    {% if i.이름 == "수미네반찬 카레" %}
-                    <a href="{% url 'recipe2Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
-                    {% endif %}
-                    {% if i.이름 == "핫 오므라이스 만들기" %}
-                    <a href="{% url 'recipe3Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
-                    {% endif %}
-                    {% if i.이름 == "스팸마요덮밥" %}
-                    <a href="{% url 'recipe4Page' %}" class="btn btn-warning text-white float-right mt-5">레시피 보기</a>
-                    {% endif %}
+                    <form method="get" action="">
+                        <a class="btn btn-warning text-white float-right mt-5" href="">레시피 보기</a>
+                    </form>
+
+                    <form action="{% url 'recipePage' %}" method="GET">
+                        <input name="position" type="hidden" value="1">
+                        <input class="btn btn-warning text-white float-right mt-5" type="submit" value="레시피 보기">
+                    </form>
+
+
                 </td>
             </tr>
            {% endfor %}

@@ -3,104 +3,101 @@
 
 {% block contents %}
 
-    <!-- Page Content -->
-    <div class="container">
+<!-- Page Content -->
+<div class="container">
 
-        </br>
-        <div class="card text-white bg-secondary my-5 py-1 text-center">
-            <p class="text-white m-0 font-weight-normal">이번달 BEST!</p>
+    </br>
+    <div class="card text-white bg-secondary my-5 py-1 text-center">
+        <p class="text-white m-0 font-weight-normal">이번달 BEST!</p>
+    </div>
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+
+        <div class="col-lg-7">
+            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{homes.1.완성사진.url}}" alt="">
         </div>
-
-        <!-- Heading Row -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-7">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-            </div>
-            <!-- /.col-lg-8 -->
-            <div class="col-lg-5">
-                <h1 class="font-weight-light">개존맛 토스트</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
-                    but it makes a great use of the standard Bootstrap core components. Feel free to use this template
-                    for any project you want!</p>
-                <a class="btn btn-warning text-white float-right mt-3" href="#">레시피 보기</a>
-            </div>
-            <!-- /.col-md-4 -->
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">{{homes.1.이름}}</h1>
+            <p class=mt-5>재료 : {{homes.1.재료}}</p>
+            <br>
+            <a class="btn btn-warning text-white float-right mt-5" href="#">레시피 보기</a>
         </div>
-        <!-- /.row -->
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
 
-        <!-- Call to Action Well -->
-        <div class="card text-white bg-secondary my-5 py-1 text-center">
-            <p class="text-white m-0">이번주 BEST!</p>
-        </div>
+    <br/>
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-1 text-center">
+        <p class="text-white m-0">이번주 BEST!</p>
+    </div>
 
-        <!-- Content Row -->
-        <div class="row">
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="col-lg-15">
-                            <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-                        </div>
-                        <h2 class="card-title my-1 text-center">Card One</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                            numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="col-lg-15">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="{{homes.0.완성사진.url}}" alt="">
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
-                    </div>
+                    <h4 class="card-title my-1 text-center mt-3 ">{{homes.0.이름}}</h4>
+                    <p class="card-text">{{homes.0.재료}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
                 </div>
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="col-lg-15">
-                            <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-                        </div>
-                        <h2 class="card-title my-1 text-center">Card Two</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex
-                            natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore
-                            voluptates quos eligendi labore.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="col-lg-15">
-                            <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-                        </div>
-                        <h2 class="card-title my-1 text-center">Card Three</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
-                            numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-md-4 -->
-
         </div>
-        <!-- /.row -->
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="col-lg-15">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="{{homes.2.완성사진.url}}" alt="">
+                    </div>
+                    <h4 class="card-title my-1 text-center mt-3">{{homes.2.이름}}</h4>
+                    <p class="card-text">{{homes.2.재료}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="col-lg-15">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="{{homes.3.완성사진.url}}" alt="">
+                    </div>
+                    <h4 class="card-title my-1 text-center mt-3">{{homes.3.이름}}</h4>
+                    <p class="card-text">{{homes.3.재료}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning text-white float-right btn-sm">레시피 보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
 
     </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
     <!-- /.container -->
+</footer>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    {% endblock %}
+{% endblock %}
