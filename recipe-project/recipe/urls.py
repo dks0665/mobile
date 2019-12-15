@@ -18,16 +18,13 @@ from django.urls import path ,include
 from django.conf import settings
 from django.conf.urls.static import static
 import main.views
+import login.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',main.views.home, name = 'home'),
-<<<<<<< HEAD
-    path('main/', include('main.urls')),
+    # path('',main.views.home, name = 'home'),
+    # path('main/', include('main.urls')),
     path('home', main.views.home, name='homePage'),
     path('all', main.views.all, name='allPage'),
     path('login/', include('login.urls')),
-=======
-    path('login/', include('login.urls'))
->>>>>>> 269c43a8c6b27761efbba50d417760899b6e7cbc
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

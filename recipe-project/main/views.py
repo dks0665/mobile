@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from .models import Main
 
-# Create your views here.
 def home(request):
     # return render(request, 'home.html')
     homes = Main.objects
