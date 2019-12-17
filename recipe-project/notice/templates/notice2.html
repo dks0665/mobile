@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}
+
+
+<!-- Page Content -->
+<div class="container">
+
+    </br>
+    <div class="card text-white bg-secondary my-5 py-1 text-center">
+        <p class="text-white m-0 font-weight-normal">공지사항</p>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr class="text-center">
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <p class="mt-3 text-center" text-center>{{notice2.1.제목}}</p>
+            </td>
+            <td>
+                <p class="mt-3 text-center">{{notice2.1.작성자}}</p>
+            </td>
+            <td>
+                <p class="mt-3 text-center">{{notice2.1.작성일}}</p>
+            </td>
+        </tr>
+        <tbody>
+    </table>
+
+    <div class="text-center" style="white-space:pre;">
+        <p>{{notice2.1.내용 }}</p>
+    </div>
+
+
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+{% endblock %}

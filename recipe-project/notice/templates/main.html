@@ -8,7 +8,7 @@
 
     </br>
     <div class="card text-white bg-secondary my-5 py-1 text-center">
-        <p class="text-white m-0 font-weight-normal">모든 레시피</p>
+        <p class="text-white m-0 font-weight-normal">공지사항</p>
     </div>
 
     <!-- Heading Row -->
@@ -29,7 +29,7 @@
             {% for i in mains %}
             <tr>
                 <td>
-                    <p class="mt-3 ml-3">{{i.제목}}</p>
+                    <p class="mt-3 text-center">{{i.제목}}</p>
                 </td>
                 <td>
                     <p class="mt-3 text-center">{{i.작성자}}</p>
@@ -38,7 +38,12 @@
                     <p class="mt-3 text-center">{{i.작성일}}</p>
                 </td>
                 <td>
-                    <a href="{% url 'recipe1Page' %}" class="btn btn-warning text-white text-center mt-2">공지 보기</a>
+                    {% if i.제목 == "<중요> 레시피 작성 시 유의사항" %}
+                    <a href="{% url 'notice1' %}" class="btn btn-warning text-white text-center mt-2">공지 보기</a>
+                    {% endif%}
+                    {% if i.제목 == "회원 가입 안내" %}
+                    <a href="{% url 'notice2' %}" class="btn btn-warning text-white text-center mt-2">공지 보기</a>
+                    {% endif%}
                 </td>
             </tr>
            {% endfor %}
@@ -48,7 +53,7 @@
     </div>
     <!-- /.row -->
 
-    
+
 
 </div>
 <!-- /.container -->

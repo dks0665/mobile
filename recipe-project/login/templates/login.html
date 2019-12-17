@@ -20,8 +20,8 @@
         {% if error %}
         <p class="font-weight-bold ml-1" style="color:tomato" > {{error}} </p>
         {% endif %}
-		<input class="btn btn-primary" type="submit" value="로그인">
-        <input class="btn btn-primary" type="button" value="회원가입" onclick="location.href='{% url 'signup' %}'">
+		<input class="btn btn-warning text-white font-weight-bold" type="submit" value="로그인">
+        <input class="btn btn-warning text-white font-weight-bold" type="button" value="회원가입" onclick="location.href='{% url 'signup' %}'">
 
 	</form>
 </div>
