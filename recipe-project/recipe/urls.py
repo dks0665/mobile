@@ -19,10 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 import main.views
 import login.views
+import notice.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',main.views.home, name = 'home'),
+    path('',login.views.login, name = 'login'),
     # path('main/', include('main.urls')),
     path('home', main.views.home, name='homePage'),
     path('all', main.views.all, name='allPage'),
@@ -34,5 +35,6 @@ urlpatterns = [
     path('recipe6', main.views.recipe6, name='recipe6Page'),
     path('recipe7', main.views.recipe7, name='recipe7Page'),
     path('recipe8', main.views.recipe8, name='recipe8Page'),
+    path('notice/', include('notice.urls')),
     path('login/', include('login.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
