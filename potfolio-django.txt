@@ -1,0 +1,49 @@
+﻿virtualenv portfolio/env
+ls
+cd portfolio
+cd env
+./Scripts/activate
+pip install django
+django-admin startproject portfolio
+cd portfolio-project
+python manage.py startapp friends
+python manage.py startapp blog
+
+----------
+models.py
+class Friend(models.Model):
+    image = models.ImageField(upload_to='images/')
+    character = models.CharField(max_length=300)
+
+-----------
+portfolio -> setting
+
+INSTALLED_APPS = [
+    'friends.apps.FriendsConfig',
+
+맨밑에 
+STATIC_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+--------------------------
+powershell
+
+pip install Pillow
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+runserver
+
+/admin
+
+
+----------------
+
+powershell
+
+git init
+git config --global user.name 'ajh'
+git config --global user.email 'ajh--'
+git config --global user.name '--'
